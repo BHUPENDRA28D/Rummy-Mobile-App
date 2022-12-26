@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+   <Toolbar
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/toolBar">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/idTitle"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Rummy Wealth"
+               android:textStyle="bold"
+               android:textColor="@color/btnText"
+               android:textSize="30sp"/>
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_baseline_menu_24"
+               android:layout_alignParentEnd="true"
+               android:padding="5dp"/>
+       </RelativeLayout>
+
+   </Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/idImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Disclamer:"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:background="@color/buttonColor"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n.This app is not for Andhra Pradesh,Assam,Nagaland,Odisha,Sikkim and Telengana users.\nThis app is for 18+.\n.Privacy policy\n.Terms and Condition"
+            android:textSize="25sp"
+            android:background="@color/buttonColor"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap To Play"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/buttonColor"
+            android:elevation="10dp"
+            android:background="@color/btnText"
+            android:layout_alignParentBottom="true"
+            />
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
